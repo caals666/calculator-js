@@ -1,0 +1,81 @@
+
+body{
+    height:100%;
+}
+.main-calc{
+    width:400px;
+    height:640px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:200px;
+    border-radius:5px;
+}
+.display{
+    font-size:50px;
+    color:white;
+    width:100%;
+    background-color:rgba(3, 84, 150, 0.699);
+    border:none;
+    height:150px;
+    text-align:right;
+}
+.bksp-img{
+    width:100px;
+}
+.option1{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    margin-bottom:0;
+}
+.option1>div>button{
+    height:100px;
+    width:100px;
+    background-color:rgb(6, 43, 124);
+    border:none;
+    font-size:24px;
+    color:white;
+}
+.numbers{
+    width:300px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    margin-top:-6px;
+}
+
+.numbers>button{
+    height:100px;
+    font-size:24px;
+}
+.last-row{
+    display:grid;
+    width:300px;
+    height:100px;
+    grid-template-columns:2fr 1fr;
+}
+.last-row>button{
+    font-size:24px;
+}
+.option2{
+    display:grid;
+    width:100px;
+    margin-left:300px;
+    margin-top:-400px;
+    grid-template-rows:1fr 1fr 2fr;
+}
+.option2>button{
+    height:100px;
+    background-color:rgb(6, 43, 124);
+    font-size:24px;
+    border:none;
+    color:white;
+}
+.option2>button:last-of-type{
+    height:200px;
+    background-color:orange;
+}
+
+.option2>button:hover, .option1>div>button:hover{
+    transition-duration:0.3s;
+    background-color:silver;
+    color:rgb(6, 43, 124);
+}
