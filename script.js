@@ -12,6 +12,7 @@ function calculate(button){
     }
     else if(value=="<"){
         text=text.slice(0,-1);
+        arr=arr.slice(0,-1);
     }
     else if(value=="="){
         text= eval(calc);
@@ -24,4 +25,4 @@ function calculate(button){
     displaytext.textContent=text;
 }
 
-buttons.forEach(btn =>{btn.onclick=() => calculate(btn) });
+buttons.forEach(btn => {btn.onclick = ()=>calculate(btn)});
