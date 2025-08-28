@@ -24,4 +24,4 @@ function calculate(button){
     displaytext.textContent=text;
 }
 
-buttons.forEach(button =>{button.onclick=() => calculate(button) });
+buttons.forEach(btn =>{btn.onclick=() => calculate(btn) });
