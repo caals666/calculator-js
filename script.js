@@ -1,5 +1,3 @@
-import * as math from 'mathjs';
-
 const displaytext=document.querySelector(".display");
 let text="";
 let buttons=document.querySelectorAll("button");
@@ -16,8 +14,8 @@ function calculate(button){
         text=text.slice(0,-1);
         arr=arr.slice(0,-1);
     }
-    else if(value=="="){
-        text= math.evaluate(calc);
+    else if(value==="="){
+        text= eval(calc);
     }
     else{
         arr.push(value);
